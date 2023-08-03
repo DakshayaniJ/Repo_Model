@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;display=swap">
+    <link media="all" onload="this.media='all'" type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;display=swap">
+    <noscript>
+        <link type="text/css" rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&subset=latin%2Clatin-ext&display=swap" />
+    </noscript>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2Citalic%2C700%2C700italic&amp;subset=latin%2Clatin-ext&amp;display=swap">
+    <link media="all" onload="this.media='all'" type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2Citalic%2C700%2C700italic&amp;subset=latin%2Clatin-ext&amp;display=swap">
+    <noscript>
+        <link type="text/css" rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&display=swap" />
+    </noscript>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Noto Sans";
+            background: white;
+        }
+
+        .first_container {
+            display: flex;
+            background-color: #FFFFFF;
+            width: 651px;
+            height: 335px;
+            width: 100%;
+            border: 0%;
+            border-radius: 0%;
+            margin-top: 40px;
+        }
+
+        .first_container_right {
+            margin-top: 10px;
+            width: 651px;
+            text-align: center;
+        }
+
+        .publication_image {
+            width: 651px !important;
+            height: 335px;
+            opacity: 1;
+            padding-left: 107px;
+            display: flex;
+
+        }
+
+        .publication_image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .be_informed {
+            font: 600 36px/22px Noto Sans;
+            letter-spacing: -0.54px;
+            color: #262629;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .be_informed>p {
+            margin: 0px 0px 0px 0px;
+            display: inline-block;
+        }
+
+        .be_informed_1 {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .monthly_annually_button {
+            display: flex;
+            justify-content: center;
+            margin-top: 19px;
+        }
+
+        .nav {
+            justify-content: center;
+        }
+
+        .monthly_pay_button:hover {
+            text-decoration: none;
+        }
+
+        .button_active {
+            background: #212B6B;
+            color: #FFFFFF;
+            padding: 0px 0px 0px 0px;
+            border: none;
+            width: 130px;
+            height: 25px;
+            top: 145px;
+            left: 891px;
+            font: normal normal bold 14px/26px Noto Sans;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 2px;
+            border-radius: 2px;
+            margin: 0 4px;
+        }
+
+        .button_passive {
+            background: #FFFFFF;
+            color: #262629;
+            padding: 0px 0px 0px 0px;
+            width: 130px;
+            height: 25px;
+            top: 145px;
+            left: 891px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 2px;
+            border: 1px solid #D0D0D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 4px;
+            font: normal normal bold 14px/26px Noto Sans;
+        }
+
+
+
+        .annually_pay_button:hover {
+            text-decoration: none;
+        }
+
+        .unlimited_digital {
+            margin: 14px 0px 0px 0px;
+            font: normal normal bold 26px/30px Noto Sans;
+            text-align: center;
+            color: #262629;
+            letter-spacing: -0.26px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+
+        .renews_text {
+            margin: 5px 0px 17px 0px;
+            line-height: 22px;
+            font-family: 'Noto Sans';
+            color: #262629;
+            opacity: 100%;
+            font-size: 14px;
+        }
+
+
+        .sign_up_button {
+            padding: 13px 70px;
+            background: #31409F 0% 0% no-repeat padding-box;
+            color: white;
+            cursor: pointer;
+            display: inline;
+            text-decoration: none;
+            border-radius: 2px;
+            text-align: center;
+            letter-spacing: 0.9px;
+            line-height: 36px;
+            font: normal normal bold 18px/36px Noto Sans;
+        }
+
+
+        .sign_up_button>span {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+            line-height: 36px;
+            font: normal normal bold 18px/36px Noto Sans;
+        }
+
+        .sign_up_button:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .payment_contents {
+            border-top: 1px solid #D0D0D3;
+            text-align: center;
+        }
+
+        .unlimited_digital_annually {
+            margin: 14px 0px 0px 0px;
+            text-align: center;
+            font: normal normal bold 26px/30px Noto Sans;
+            opacity: 100%;
+            color: #262629;
+        }
+
+
+        .renews_text_1 {
+            line-height: 22px;
+            margin: 5px 0px 17px 0px;
+            font-family: 'Noto Sans';
+            color: #262629;
+            opacity: 100%;
+            font-size: 14px;
+        }
+
+
+        .payment_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .we_accept {
+            width: 58px;
+            font: normal normal normal 12px/36px Noto Sans;
+            text-align: center;
+            color: #262629;
+        }
+
+        #gpay_image {
+            width: 45px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        #paypal_image {
+            width: 45px;
+            height: 24px;
+            margin-left: 10px;
+
+        }
+
+        #credit_image {
+            width: 45px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        #apple_pay{
+            width: 45px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        
+        .second_container {
+            width: 100%;
+            height: 184px;
+            background-color: #F3F3F4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .second_container>ul {
+            padding-left: 0px;
+        }
+
+        ul {
+            list-style: none;
+            list-style-type: none;
+        }
+
+        ul li::marker {
+            content: '✓';
+            color: #31409F;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+
+        .first_li {
+            width: 340px;
+            height: 48px;
+            font: normal normal normal 14px/22px Noto Sans;
+            text-align: left;
+            color: #262629;
+        }
+
+        .second_li {
+            width: 340px;
+            height: 48px;
+            font: normal normal normal 14px/22px Noto Sans;
+            text-align: left;
+            color: #262629;
+
+        }
+
+        .third_li {
+            width: 340px;
+            height: 48px;
+            font: normal normal normal 14px/22px Noto Sans;
+            text-align: left;
+            color: #262629;
+        }
+
+        .forth_li {
+            width: 340px;
+            height: 48px;
+            font: normal normal normal 14px/22px Noto Sans;
+            text-align: left;
+            color: #262629;
+
+        }
+
+        .third_container {
+            display: flex;
+            margin-top: 49px;
+            background-color: #FFFFFF;
+            margin-bottom: 166px;
+        }
+
+        .interested_print {
+            height: 27px;
+            font: normal normal 600 20px/26px Noto Sans;
+            letter-spacing: -0.2px;
+            color: #262629;
+            margin: 0%;
+            display: inline-block;
+        }
+
+        .delivery_subscribers {
+            margin-top: 10px;
+            height: 38px;
+            font: normal normal normal 28px/38px Noto Sans;
+            text-align: left;
+            display: inline-block;
+            color: #262629;
+        }
+
+        .home_delivery {
+            margin-top: 8px;
+            color: #262629;
+            text-align: left;
+            font: normal normal normal 14px/38px Noto Sans;
+            display: inline-block;
+            letter-spacing: -0.14px;
+        }
+
+        .placeholder_button {
+            width: 220px;
+            height: 35px;
+            border-radius: 2px;
+            border: #262629;
+
+        }
+
+        .input-box {
+            width: 220px;
+            height: 35px;
+            border: 0.5px solid #262629;
+            border-radius: 2px;
+            opacity: 1;
+            padding: 5px;
+            font-size: 12px;
+            color: #262629;
+            text-align: center;
+        }
+
+        .input-box::placeholder {
+            height: 17px;
+            width: 145px;
+            content: "Enter Zip Code (ex. 00000)";
+            font: normal normal normal 12px/17px Noto Sans;
+            text-align: left;
+            color: #68686F;
+            opacity: 1;
+            padding: 2px;
+        }
+
+        .third_container_child {
+            width: 927px;
+            margin-left: 150px;
+        }
+
+        .third_container_child>div>p {
+            display: inline;
+        }
+
+        .check_avilability_button {
+            width: 225px;
+            height: 45px;
+            margin-top: 15px;
+            height: 45px;
+            border-radius: 2px;
+            opacity: 1;
+            background: #212B6B 0% 0% no-repeat padding-box;
+        }
+
+        .check_avilability_button span {
+            width: 180px;
+            height: 22px;
+            letter-spacing: 0.8px;
+            font: normal normal bold 16px/36px Noto Sans;
+            color: #FFFFFF;
+        }
+
+        .check_availablity_input {
+            display: flex;
+            flex-direction: column;
+            margin-right: 164px;
+        }
+
+        .subscription_plan {
+            display: inline-block;
+            font: normal normal normal 14px/22px Noto Sans;
+            letter-spacing: 0;
+            color: #262629;
+            text-align: center;
+            opacity: 1;
+        }
+
+        .second_ul {
+            margin-left: 66px;
+        }
+
+        #content_monthly {
+            text-align: center;
+        }
+
+        #content_annually {
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+    <div>
+        <div class="first_container">
+            <div class="publication_image">
+                <img src="https://media.mcclatchy.com/email-assets/global/device-library/digital-device-trio/mia-digital-device-trio.png"
+                    alt="Miamiherald-image">
+            </div>
+
+            <div class="first_container_right">
+                <div class="be_informed">
+                    <div class="be_informed_1">Be informed. Stay connected.</div>
+                    <div class="subscription_plan">Choose the subscription plan that’s right for you.</div>
+                </div>
+
+                <div>
+                    <div class="monthly_annually_button">
+                        <button class="button_active" id="monthly_pay">PAY MONTHLY</button>
+                        <button class="button_passive" id="annually_pay">
+                            <span>
+                                PAY ANNUALLY
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="payment_contents">
+                        <div id="content_monthly">
+                            <p class="unlimited_digital">$1 for 1 month of Unlimited Digital Access</p>
+                            <p class="renews_text">Renews at $15.99/month</p>
+                            <a class="sign_up_button"
+                                href="https://mycheckout.miamiherald.com/subscribe?ofrgp_id=428&g2i_or_o=Email&g2i_or_p=General&cid=eml_ret_dual-email-offer_1-1mo-15.99_202307">
+                                SIGN UP
+                            </a>
+                        </div>
+
+                        <div id="content_annually" class="content hide">
+                            <p class="unlimited_digital_annually">$159.99 for 1 year of Unlimited Digital Access</p>
+                            <p class="renews_text_1">Renews at $159.99/year</p>
+                            <a class="sign_up_button"
+                                href="https://mycheckout.miamiherald.com/subscribe?ofrgp_id=414&g2i_or_o=Email&g2i_or_p=General&cid=eml_ret_dual-email-offer_159.99-annual_202307">
+                                SIGN UP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment_container">
+                    <span class="we_accept">We accept</span>
+                    <img id="gpay_image" src="./Assests/GPay.svg" alt="GPay">
+                    <img id="apple_pay" src="./Assests/Apple_Pay-Logo.png" alt="">
+                    <img id="paypal_image" src="./Assests/paypal-small.png" alt="paypal">
+                    <img id="credit_image" src="./Assests/credit.svg" alt="credit">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="second_container">
+        <ul class="first_ul">
+            <li class="first_li">News app with a customizable news feed, real-time breaking news alerts and in-app
+                eEdition access</li>
+            <li class="second_li">An exclusive homepage experience with unlimited story views, subscriber-only content
+                and fewer ads</li>
+        </ul>
+        <ul class="second_ul">
+            <li class="third_li">Daily emails with the latest news, breaking news alerts and newsletters relevant to you
+            </li>
+            <li class="forth_li">The eEdition, a digital version of the print paper with bonus sections not available in
+                print</li>
+        </ul>
+    </div>
+
+
+    <div class="third_container">
+
+        <div class="third_container_child">
+            <div class="interested_print">
+                <p>
+                    Interested in Print?
+                </p>
+            </div>
+            <div class="delivery_subscribers">
+                <p>
+                    Delivery of The Sacramento Bee includes free digital access.
+                </p>
+            </div>
+            <div class="home_delivery">
+                <p>
+                    Home delivery subscribers receive free unlimited digital access with their subscription. Choose your
+                    delivery. Cancel anytime.
+                </p>
+            </div>
+        </div>
+
+        <div class="check_availablity_input">
+            <input class="input-box" type="text" placeholder="Enter Zip Code (ex. 00000)" />
+            <button class="check_avilability_button">
+                <span>CHECK AVAILABILITY </span>
+            </button>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./checking.js"></script>
+</body>
+
+</html>
